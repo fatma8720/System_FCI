@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "jzCqwYsOd3FwlaBP6xkKEIxagEsi/AotbhdJ+LAMb/9qL8JVY2Q6TAEEpQsl87crYgDsPxlMz7qbrv/Udti9DA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mom\\source\\repos\\System_FCI\\System_FCI\\System_FCI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\mom\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\mom\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\mom\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
