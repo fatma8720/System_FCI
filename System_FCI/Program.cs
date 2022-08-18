@@ -458,8 +458,8 @@ namespace System_FCI
                         else if (SearchChoice == 3)
                         {
                             WriteLine("Enter Worker Name  : ");
-                            string TechnicianName = ReadLine();
-                            List<Worker> Matches = worker1.Search(TechnicianName);
+                            string workerName = ReadLine();
+                            List<Worker> Matches = worker1.Search(workerName);
                             if (Matches.Count == 0)
                             {
                                 WriteLine("\n\n -Not Found-\n\n");
