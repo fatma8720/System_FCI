@@ -25,11 +25,12 @@ namespace System_FCI
         public static List<Worker> Workers = new List<Worker>() 
         {
           new Worker() { WorkerID = 1, Name = "Soad", Age = 50, WorkerSalary = 5000 , Gender=Gender.FEMALE},
-          new Worker() { WorkerID = 2, Name = "Mostafa", Age = 38, WorkerSalary = 3700 , Gender=Gender.MALE},
           new Worker() { WorkerID = 3, Name = "Saad", Age = 20, WorkerSalary = 2500 , Gender=Gender.MALE},
-           new Worker() { WorkerID = 4, Name = "Saeed", Age = 50, WorkerSalary = 9000 , Gender=Gender.FEMALE},
+          new Worker() { WorkerID = 4, Name = "Saeed", Age = 50, WorkerSalary = 9000 , Gender=Gender.FEMALE},
+          new Worker() { WorkerID = 6, Name = "Aliaa", Age = 20, WorkerSalary = 7000 , Gender=Gender.MALE},
           new Worker() { WorkerID = 5, Name = "Mohamed", Age = 38, WorkerSalary = 4500 , Gender=Gender.MALE},
-          new Worker() { WorkerID = 6, Name = "Aliaa", Age = 20, WorkerSalary = 7000 , Gender=Gender.MALE}
+          new Worker() { WorkerID = 2, Name = "Mostafa", Age = 38, WorkerSalary = 3700 , Gender=Gender.MALE}
+
         };
 
     }

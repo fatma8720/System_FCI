@@ -19,7 +19,7 @@ namespace System_FCI
         public double WorkerSalary { get; set; }
         public override string ToString()
         {
-            return ("{" + Name + "\t\t" + Age + "  Years old" + "\t\t" + WorkerSalary +" EGP"+ "\t\t }");
+            return ("{" + Name + "\t\t" + Age + "\tYears old\t\t" + WorkerSalary +"EGP}");
         } // return data of one worker
         public List<Worker> GetWorkersList()
         {

@@ -62,7 +62,7 @@ namespace System_FCI
         public override string ToString()
         {
             if (this != null)
-                return ("{" + Name + "\t\t" + Age + " Years old" + "\t\t" + GPA + " G" + "\t\t" + StudentDEP + "\t\t }");
+                return ("{" + Name + "\t\t" + Age + " Years old" + "\t\t" + GPA + " G" + "\t\t" + StudentDEP + "}");
             else
                 return ("Empty Data Null Object");
         } // return data of one Student

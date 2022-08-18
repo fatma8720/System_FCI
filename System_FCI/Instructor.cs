@@ -30,7 +30,7 @@ namespace System_FCI
 
         public override string ToString()
         {
-            return ("{" + Name + "\t\t" + Age + " Years old" + "\t\t" + Salary+" EGP" + "\t\t" + InstructorType+ "\t\t" + InstructorDepartment+ "\t\t }");
+            return ("{" + Name + "\t\t" + Age + " Years old" + "\t\t" + Salary+" EGP" + "\t\t" + InstructorType+ "           \t\t" + InstructorDepartment+ "}");
         } // return data of one instructor
         public List<Instructor> GetInstructorList()
         {
