@@ -76,7 +76,9 @@ namespace System_FCI
             foreach (var item in Students)
             {
                 if (item.Name == name) // if Instructor --- if Worker 
+                {
                     WantedStudent.Add(item);
+                }
             }
             return WantedStudent;
         } // search about Student
@@ -86,13 +88,14 @@ namespace System_FCI
             if (res.Count == 0) WriteLine("\n\t NOT Found \t\n");
             else
             {
-                foreach (var item in Students)
+                for(int i = 0 ; i< res.Count; i++)
                 {
-                    if (item.Name == name && item.StudentDEP.ToString() == Department)
-                        Students.Remove(item);
+                    if (res[i].StudentDEP.ToString() == Department)
+                    {
+                        Students.Remove(res[i]);
+                    }
                 }
-                WriteLine("\n \t\t Student with this data Have been Deleted \t\t \n ");
-
+                    WriteLine("\n \t\t Student with this data Have been Deleted \t\t \n ");
             }
         } // delete Student
         public void ClearData()
@@ -101,9 +104,9 @@ namespace System_FCI
         } // remove all Students
         public void ShowStudetsInList(List<Student> students)
         {
-            if (Students == null)
+            if (students == null)
                 return;
-            foreach (var student in Students)
+            foreach (var student in students)
             {
                 WriteLine(student.ToString());
             }

@@ -41,7 +41,7 @@ namespace System_FCI
             if (res.Count == 0) WriteLine("\n\t NOT Found \t\n");
             else
             {
-                foreach (var item in Workers)
+                foreach (var item in res)
                 {
                     if (item.Name == name)
                         Workers.Remove(item);
@@ -56,9 +56,9 @@ namespace System_FCI
         } // remove all worker
         public void ShowWorkersInList(List<Worker> workers)
         {
-            if (Workers == null)
+            if (workers == null)
                 return;
-            foreach (var worker in Workers)
+            foreach (var worker in workers)
             {
                 WriteLine(worker.ToString());
             }

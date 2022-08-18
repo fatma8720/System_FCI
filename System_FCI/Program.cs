@@ -438,7 +438,11 @@ namespace System_FCI
                             {
                                 WriteLine("\n\n -Not Found-\n\n");
                             }
-                            student1.ShowStudetsInList(Matches);
+                            else
+                            {
+                                student1.ShowStudetsInList(Matches);
+                            }
+                            
                         }
                         else if (SearchChoice == 2)
                         {
@@ -488,20 +492,17 @@ namespace System_FCI
                         }
                         else if (DeleteChoice == 2)
                         {
-                            Write("Enter Name Of Instructor That U Want To Delete Him/Her : ");
+                            Write("Name Of Instructor : ");
                             string instructortName = ReadLine();
-                            Write("Enter His/Her Department : ");
+                            Write("Department : ");
                             string instructorDepartment = ReadLine();
                             instructor1.Delete(instructortName, instructorDepartment);
                         }
                         else if (DeleteChoice == 3)
                         {
-                            Write("Enter Name Of Technitian That U Want To Delete Him/Her : ");
-                            string TechnitiantName = ReadLine();
-                            Write("Enter His/Her Department : ");
-                            string TechnitianDepartment = ReadLine();
-                            worker1.Delete(TechnitiantName, TechnitianDepartment);
-                            WriteLine("\n\n----------You Have Successfully Delete Technician With Name " + TechnitiantName + " In " + TechnitianDepartment + " Department ----------\n\n");
+                            Write("Name Of Worker  : ");
+                            string workerName = ReadLine();
+                            worker1.Delete(workerName);
                         }
                         else if (DeleteChoice == 4)
                         {

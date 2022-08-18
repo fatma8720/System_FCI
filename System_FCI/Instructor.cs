@@ -52,10 +52,12 @@ namespace System_FCI
             if (res.Count == 0) WriteLine("\n\t NOT Found \t\n");
             else
             {
-                foreach (var item in Instructors)
+                for (int i = 0; i < res.Count; i++)
                 {
-                    if (item.Name == name && item.InstructorDepartment.ToString() == Department)
-                        Instructors.Remove(item);
+                    if (res[i].InstructorDepartment.ToString() == Department)
+                    {
+                        Instructors.Remove(res[i]);
+                    }
                 }
                 WriteLine("\n \t\t Instructor with this data Have been Deleted \t\t \n ");
 
@@ -67,9 +69,9 @@ namespace System_FCI
         } // remove all 
         public void ShowInstructorsInList(List<Instructor> instructors)
         {
-            if (Instructors == null)
+            if (instructors == null)
                 return;
-            foreach (var instructor in Instructors)
+            foreach (var instructor in instructors)
             {
                 WriteLine(instructor.ToString());
             }
